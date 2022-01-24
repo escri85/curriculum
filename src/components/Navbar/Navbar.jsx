@@ -3,7 +3,7 @@ import "./Navbar.scss";
 const Navbar = () => {
   return (
     <>
-      <ul>
+      <ul className="navbar">
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? "active" : "")}

@@ -4,3 +4,13 @@
         color: red;
     }
 }
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    & li{
+        margin: 10px;
+        text-decoration: none;
+        list-style: none;
+    }
+}
