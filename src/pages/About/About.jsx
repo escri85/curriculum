@@ -1,8 +1,15 @@
+import "./About.scss"
+
+
+const foto = "./public/angular.png"
+
 
 
 const About = () => {
     return ( <>
-        soy el about
+       <div>
+           <img className="fotoo" src={foto} alt=""/>
+       </div>
     </> );
 }
  

@@ -1,6 +1,6 @@
 
 import "./Contact.scss"
-
+import Parrafo from "../../styles/Parrafo";
 const Contact = (props) => {
   const { contact } = props;
 
@@ -22,21 +22,21 @@ const Contact = (props) => {
       <h2>
         {contact.name} {contact.lastName}
       </h2>
-        <p>🗺️{contact.city} </p>
-        <p>🗓️{contact.birthDate}</p>
-        <p>
+        <Parrafo>🗺️{contact.city} </Parrafo>
+        <Parrafo>🗓️{contact.birthDate}</Parrafo>
+        <Parrafo>
           📧
           <a href={"mailto:" + contact.email}>
          escri85@gmail.com
           </a>
-        </p>
-        <p>📱 {contact.phone}</p>
-        <p>💾<a href={contact.gitHub}>
+        </Parrafo>
+        <Parrafo>📱 {contact.phone}</Parrafo>
+        <Parrafo>💾<a href={contact.gitHub}>
             GitHub
-          </a></p>
-          <p>💾<a href={contact.linkedin}>
+          </a></Parrafo>
+          <Parrafo>💾<a href={contact.linkedin}>
           linkedin
-          </a></p>
+          </a></Parrafo>
       </div>
     </div>
   );
