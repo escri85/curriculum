@@ -1,0 +1,23 @@
+img {
+  width: 300px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  overflow: scroll;
+  height:475px
+//   width: 250px;
+}
+h3 {
+  font-size: x-large;
+  color: white;
+  font-family: serif;
+  text-transform: uppercase;
+}
+p{
+    text-align: center;
+    color: white;
+    font-family: serif;
+}

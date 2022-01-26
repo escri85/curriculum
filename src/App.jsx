@@ -1,15 +1,15 @@
 /* eslint-disable default-case */
 import "./App.scss";
-import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Navbar from "./components/Navbar/Navbar";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   Works,
   Formation,
   Contact,
   About,
   Experience,
-  Home,
-  Notfound,
+  // Home,
+  // Notfound,
   Header,
 } from "./pages/index";
 import { Cv } from "./components/Cv";
@@ -75,8 +75,8 @@ function App() {
         {showContact ? <Contact contact={contact} /> : null}
         {showFormation ? <Formation formacion={formacion} /> : null}
         {showExperience ? <Experience experience={experience} /> : null}
-        {showAbout ? <About /> :(null)}
-
+        {showAbout ? <About languages={languages} habilities={habilities} /> :(null)}
+        {showwork ? <Works/>:(null)}
       </div>
     </div>
   );
