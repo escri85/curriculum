@@ -73,9 +73,9 @@ function App() {
       </div>
       <div className="app__info">
         {showContact ? <Contact contact={contact} /> : null}
-        {showFormation ? <Formation formacion={formacion} /> : null}
+        {showFormation ? <Formation formacion={formacion} languages={languages} /> : null}
         {showExperience ? <Experience experience={experience} /> : null}
-        {showAbout ? <About languages={languages} habilities={habilities} /> :(null)}
+        {showAbout ? <About  habilities={habilities} /> :(null)}
         {showwork ? <Works/>:(null)}
       </div>
     </div>
