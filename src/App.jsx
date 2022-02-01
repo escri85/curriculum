@@ -14,7 +14,6 @@ import {
 } from "./pages/index";
 import { Cv } from "./components/Cv";
 import { useState } from "react";
-import Button from "./styles/Button";
 const { contact, formacion, experience, languages, habilities } = Cv;
 
 function App() {
@@ -64,19 +63,23 @@ function App() {
   return (
     <div className="app">
       <div className="app__botons">
-        <Header />
-        <Button onClick={changeContact}>Contacto</Button>
-        <Button onClick={changeFormation}>Formacion</Button>
-        <Button onClick={changeExperience}>Experiencia</Button>
-        <Button onClick={changeWorks}>Trabajos</Button>
-        <Button onClick={changeAbout}>Sobre mi</Button>
+        <Header
+          contact={contact}
+          changeContact={changeContact}
+          changeFormation={changeFormation}
+          changeExperience={changeExperience}
+          changeWorks={changeWorks}
+          changeAbout={changeAbout}
+        />
       </div>
       <div className="app__info">
         {showContact ? <Contact contact={contact} /> : null}
-        {showFormation ? <Formation formacion={formacion} languages={languages} /> : null}
+        {showFormation ? (
+          <Formation formacion={formacion} languages={languages} />
+        ) : null}
         {showExperience ? <Experience experience={experience} /> : null}
-        {showAbout ? <About  habilities={habilities} /> :(null)}
-        {showwork ? <Works/>:(null)}
+        {showAbout ? <About habilities={habilities} /> : null}
+        {showwork ? <Works /> : null}
       </div>
     </div>
   );

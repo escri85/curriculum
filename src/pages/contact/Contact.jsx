@@ -17,7 +17,6 @@ const Contact = (props) => {
     // </div>
 
     <div className="hero">
-      <img src={contact.image} alt="" />
       <div className="card">
       <h2>
         {contact.name} {contact.lastName}

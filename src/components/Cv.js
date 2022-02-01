@@ -5,8 +5,8 @@ export const Cv =  {
 
     contact: {
       name: "Sergio",
-      lastName: "Escribano Fernandez",
-      city: "Arroyo de la Encomienda / Valladolid",
+      lastName: "Escribano fernandez",
+      city: "Valladolid",
       email: "escri85@gmail.com",
       birthDate: "30/07/1985",
       phone: "(+34) 659770147 ",

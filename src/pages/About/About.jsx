@@ -3,7 +3,7 @@ import Parrafo from "../../styles/Parrafo";
 const About = ({ habilities }) => {
   return (
     <>
-      <div className="habilities card">
+      <div className="card">
         {habilities.map((element) => {
           return (
               console.log(element),

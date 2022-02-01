@@ -1,8 +1,31 @@
-
+@import url(./../../App.scss);
 .header{
-    font-family: fantasy;
+    font-family: cursive;
     color: white;
     font-family: fangsong;
     font-size: 2rem;
     text-transform: capitalize;
+    background-color: #4A63E7;
+    border-radius: 4%;
+    padding: 20px;
+    margin: 10%;
+    width: max-content;
+    & img{
+width: 150px;
+border-radius: 50%;
+    }
+    & h2{
+color: white;
+font-family: cursive;
+    }
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    width: fit-content;
+   /*  @include for-phone-only{
+        display: flex;
+        flex-direction: column;
+    } */
 }

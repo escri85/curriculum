@@ -6,14 +6,20 @@ const Button = styled.button`
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  background-color: #1883ba;
+  background-color: #4A63E7;
   border-radius: 6px;
-  border: 2px solid #0016b0;
   cursor: pointer;
-  margin: 0.5rem;
+  border: none;
   :hover {
+    color: #1883ba;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+  }
+  :focus{
     color: #1883ba;
     background-color: #ffffff;
   }
 `;
+
 export default Button;
