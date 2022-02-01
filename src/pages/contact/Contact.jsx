@@ -18,9 +18,6 @@ const Contact = (props) => {
 
     <div className="hero">
       <div className="card">
-      <h2>
-        {contact.name} {contact.lastName}
-      </h2>
         <Parrafo>🗺️{contact.city} </Parrafo>
         <Parrafo>🗓️{contact.birthDate}</Parrafo>
         <Parrafo>

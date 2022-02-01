@@ -21,7 +21,7 @@ const Header = (props) => {
     <div className="header">
       <img src={contact.image} alt="" />
       <h2>Sergio Escribano</h2>
-      <h5>web developer</h5>
+      <h3>web developer</h3>
       <div className="botones">
         <Button onClick={changeContact}>
               <FontAwesomeIcon className="icono" icon={faPhone} />
