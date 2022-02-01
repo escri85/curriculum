@@ -1,4 +1,4 @@
-img {
+/* img {
   width: 300px;
 }
 .container {
@@ -20,4 +20,26 @@ p{
     text-align: center;
     color: white;
     font-family: serif;
+} */
+.container{
+  display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  & img{
+    width: 500px;
+    align-items: flex-end;
+  }
+  & p{
+text-align: center;
+  }
 }
