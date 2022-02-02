@@ -11,11 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Header = (props) => {
   const {
     contact,
-    changeContact,
-    changeFormation,
-    changeExperience,
-    changeWorks,
-    changeAbout,
+    changeComponent,
   } = props;
   return (
     <div className="header">
@@ -23,23 +19,23 @@ const Header = (props) => {
       <h2>Sergio Escribano</h2>
       <h3>web developer</h3>
       <div className="botones">
-        <Button onClick={changeContact}>
+        <Button onClick={()=>{changeComponent('contact')}}>
               <FontAwesomeIcon className="icono" icon={faPhone} />
           Contacto
         </Button>
-        <Button onClick={changeAbout}>
+        <Button onClick={()=>{changeComponent('about')}}>
           <FontAwesomeIcon className="icono" icon={faUser} />
           About
         </Button>
-        <Button onClick={changeWorks}>
+        <Button onClick={()=>{changeComponent('works')}}>
           <FontAwesomeIcon className="icono" icon={faBriefcase} />
           Trabajos
         </Button>
-        <Button onClick={changeFormation}>
+        <Button onClick={()=>{changeComponent('formation')}}>
           <FontAwesomeIcon className="icono" icon={faUserGraduate} />
           Formacion
         </Button>
-        <Button onClick={changeExperience}>
+        <Button onClick={()=>{changeComponent('experience')}}>
           <FontAwesomeIcon className="icono" icon={faToolbox} />
           Experiencia
         </Button>

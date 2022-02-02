@@ -17,69 +17,31 @@ import { useState } from "react";
 const { contact, formacion, experience, languages, habilities } = Cv;
 
 function App() {
-  const [showContact, setContact] = useState(false);
-  const [showFormation, setFormation] = useState(false);
-  const [showwork, setwork] = useState(false);
-  const [showAbout, setAbout] = useState(false);
-  const [showExperience, setExperience] = useState(false);
+ 
+  const [component,setComponent]=useState( <Contact contact={contact} />)
 
-  const changeContact = (e) => {
-    e.preventDefault();
-    setContact(true);
-    setFormation(false);
-    setExperience(false);
-    setwork(false);
-    setAbout(false);
-  };
-  const changeFormation = (e) => {
-    e.preventDefault();
-    setFormation(true);
-    setContact(false);
-    setwork(false);
-    setAbout(false);
-    setExperience(false);
-  };
-  const changeExperience = () => {
-    setContact(false);
-    setFormation(false);
-    setExperience(true);
-    setwork(false);
-    setAbout(false);
-  };
-  const changeWorks = () => {
-    setContact(false);
-    setFormation(false);
-    setExperience(false);
-    setwork(true);
-    setAbout(false);
-  };
-  const changeAbout = () => {
-    setContact(false);
-    setFormation(false);
-    setExperience(false);
-    setwork(false);
-    setAbout(true);
-  };
+const changeComponent=(componentName)=>{
+ const components={
+   contact: <Contact contact={contact} />,
+   formation: <Formation formacion={formacion} languages={languages}/>,
+   experience: <Experience experience={experience} />,
+   about: <About habilities={habilities} />,
+   works:  <Works />,
+
+ }
+ setComponent(components[componentName])
+}
+
   return (
     <div className="app">
       <div className="app__botons">
         <Header
           contact={contact}
-          changeContact={changeContact}
-          changeFormation={changeFormation}
-          changeExperience={changeExperience}
-          changeWorks={changeWorks}
-          changeAbout={changeAbout}
+         changeComponent={changeComponent}
         />
       </div>
       <div className="app__info">
-        {showContact ? <Contact contact={contact} /> : null}
-        {showFormation ? (
-          <Formation formacion={formacion} languages={languages} />
-        ) : null}
-        {showExperience ? <Experience experience={experience} /> : null}
-        {showAbout ? <About habilities={habilities} /> : null}
-        {showwork ? <Works /> : null}
+      {component}
       </div>
     </div>
   );
