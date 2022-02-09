@@ -6,7 +6,7 @@ const About = ({ habilities }) => {
       <div className="card">
         {habilities.map((element) => {
           return (
-            <div className={JSON.stringify(element)}>
+            <div key={JSON.stringify(element)}>
               <Parrafo>{element}</Parrafo>
             </div>
           );
