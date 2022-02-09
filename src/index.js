@@ -2,34 +2,33 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
-import { IntlProvider } from "react-intl";
-import english from './lang/en.json'
-import spanish from './lang/es.json'
+import LanguageWrapper from "./context/LanguageContext";
+// import { IntlProvider } from "react-intl";
+// import english from './lang/en.json'
+// import spanish from './lang/es.json'
 
+// const locale = 'en'
+// let lang;
 
-const locale = 'en'
-let lang;
+// switch (locale) {
+//   case 'es':{
+//     lang=spanish
 
+//     break;}
+//     case 'en':
+//    { lang = english
 
-switch (locale) {
-  case 'es':{
-    lang=spanish
-    
-    break;}
-    case 'en':
-   { lang = english
-    
-    break;
-}
-  default:
-    lang = spanish
-}
+//     break;
+// }
+//   default:
+//     lang = spanish
+// }
 
 ReactDOM.render(
   <React.StrictMode>
-    <IntlProvider locale={locale} default="es" messages={lang}>
+    <LanguageWrapper>
       <App />
-    </IntlProvider>
+    </LanguageWrapper>
   </React.StrictMode>,
   document.getElementById("root")
 );

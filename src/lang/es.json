@@ -1,5 +1,16 @@
-
 {
-    "app.example":"this is example",
-    "ejemplo":"sergio{lastName}"
+    "languageSelector.title": "Elige tu idioma",
+    "boton-contacto": "Contacto",
+    "boton-about": "About",
+    "boton-trabajos": "Trabajos",
+    "boton-formacion": "Educacion",
+    "boton-experiencia": "Experiencia",
+    "videojuegos": "pagina de videojuegos",
+    "parrafo-angular": "Pagina realizada con angular llamada a una API para busqueda de videojuegos por nombre y genero guardado de favoritos y link dedescargas,contiene un login sencillo para poder navegar por la pagina",
+    "titulo-rick": "pagina de rick & Morty",
+    "parrafo-rick": "pagina hecha con webpack,llamando a una API y filtrando personajes por nombre,añadido de personajes favoritos y reseteo de pagina hecho con javascript puro, html y scss",
+    "titulo-tareas": "app de lista de tareas",
+    "parrafo-tareas":"app sencilla de lista de tareas para añadir o eliminar hecha con js DOM html y css",
+    "parrafo-insta":"clonacion de instagram para la practica de maquetacion con css sass y metodologia BEM"
+    
 }

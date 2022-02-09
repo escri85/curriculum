@@ -8,6 +8,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FormattedMessage } from "react-intl";
 const Header = (props) => {
   const {
     contact,
@@ -21,23 +22,32 @@ const Header = (props) => {
       <div className="botones">
         <Button onClick={()=>{changeComponent('contact')}}>
               <FontAwesomeIcon className="icono" icon={faPhone} />
-          Contacto
+              <FormattedMessage id="boton-contacto"/>
+          {/* Contacto */}
         </Button>
         <Button onClick={()=>{changeComponent('about')}}>
           <FontAwesomeIcon className="icono" icon={faUser} />
-          About
+          <FormattedMessage id="boton-about"/>
+          
+          {/* About */}
         </Button>
         <Button onClick={()=>{changeComponent('works')}}>
           <FontAwesomeIcon className="icono" icon={faBriefcase} />
-          Trabajos
+          <FormattedMessage id="boton-trabajos"/>
+
+          {/* Trabajos */}
         </Button>
         <Button onClick={()=>{changeComponent('formation')}}>
           <FontAwesomeIcon className="icono" icon={faUserGraduate} />
-          Formacion
+          <FormattedMessage id="boton-formacion"/>
+          
+          {/* Formacion */}
         </Button>
         <Button onClick={()=>{changeComponent('experience')}}>
           <FontAwesomeIcon className="icono" icon={faToolbox} />
-          Experiencia
+          <FormattedMessage id="boton-experiencia"/>
+
+          {/* Experiencia */}
         </Button>
       </div>
     </div>

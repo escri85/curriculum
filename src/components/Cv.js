@@ -3,6 +3,7 @@
 
 export const Cv =  {
 
+   es:{
     contact: {
       name: "Sergio",
       lastName: "Escribano fernandez",
@@ -76,19 +77,84 @@ export const Cv =  {
       "manejo del estres y frustracion",
       "organizado",
     ],
-    /* volunteer: [
-          {
-            name: "September Foundation",
-            where: "MIT",
-            description:
-              "The September Foundation is a program by Tony Stark to fund schools and young prodigies in their education. The foundation was named by Stark after a lyric from The Fantasticks song, 'Try to Remember,' which he heard his mother sing and play on the piano before her death.",
-          },
-          {
-            name: "Damage Control",
-            where: "U.S.A.",
-            description:
-              "The United States Department of Damage Control, occasionally known as the DODC, is a department of the United States of America. Initially a subsidiary of S.H.I.E.L.D., Damage Control was an organization specializing in post-battle clean-up. Following the Battle of New York, Damage Control was made into an executive branch of the United States government, and in a joint venture with Stark Industries, was tasked with acquiring alien and other dangerous artifacts along with cleaning up damages caused by enhanced individuals.",
-          },
-        ], */
+   },
+   en:{
+    contact: {
+      name: "Sergio",
+      lastName: "Escribano fernandez",
+      city: "Valladolid",
+      email: "escri85@gmail.com",
+      birthDate: "30/07/1985",
+      phone: "(+34) 659770147 ",
+      image:
+        "https://media-exp1.licdn.com/dms/image/C4D03AQFSMdwNsqH8Og/profile-displayphoto-shrink_200_200/0/1641729855984?e=1648684800&v=beta&t=DGqSYbZPqKJDD-Svh2DSo2B7p4QwXnTmoF34_MqwX5M",
+      gitHub: "https://github.com/escri85",
+      linkedin:
+        "https://www.linkedin.com/in/sergio-escribano-fernandez-51466184/",
+    },
+    formacion: [
+      {
+        name: "BOOTCAMP FULLSTACK",
+        date: "2022",
+        where: "UPGRADE-HUB(remoto)",
+      },
+      {
+        name: "C.F.G.S DAM",
+        date: "2020-ACTUALIDAD",
+        where: "PALENCIA(remoto)",
+      },
+      {
+        name: "C.F.G.S PROGRAMACION F.M",
+        date: "2014",
+        where: "VALLADOLID",
+      },
+    ],
+    experience: [
+      {
+        name: "CNC Programmer",
+        date: "5 years",
+        where: "Aciturri s.l.u",
+        description: "Manufacture of aeronautical parts",
+      },
+      {
+        name: "CNC Programmer",
+        date: "3 years",
+        where: "Aeronautical Map",
+        description: "Manufacture of aeronautical parts",
+      },
+      {
+        name: "CNC Programmer",
+        date: "2 years",
+        where: "Mechanized Aceves",
+        description: "Manufacture and design of parts ",
+      },
+    ],
+    languages: [
+      {
+        language: "Castellano",
+        wrlevel: "Native",
+        splevel: "Native",
+      },
+      {
+        language: "ingles",
+        wrlevel: "a2",
+        splevel: "a2",
+      },
+    ],
+    habilities: [
+      "Problem resolution",
+      "teamwork",
+      "autonomy and initiative",
+      "steady on the job",
+      "fast learning",
+      "environmental adaptation",
+      "remote work",
+      "stress and frustration management",
+      "organized",
+    ]
+    
+
+   }
+
   }
 

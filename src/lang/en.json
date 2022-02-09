@@ -1,6 +1,21 @@
 
 
-{
-    "app.example":"esto es un ejemplo",
-    "ejemplo":"sergio{lastName}"
+{ 
+   
+ 
+    "languageSelector.title": "Choose your language",
+    "boton-contacto":"Contact",
+    "boton-about":"About",
+    "boton-trabajos":"Works",
+    "boton-formacion":"Education",
+    "boton-experiencia":"Experiencie",
+    "videojuegos":"game page",
+    "parrafo-angular":"Page made with angular called an API to search for video games by name and genre, saved favorites and download link, contains a simple login to navigate the page",
+    "titulo-rick":"rick & morty page",
+    "parrafo-rick":"page made with webpack, calling an API and filtering characters by name, added favorite characters and page reset done with pure javascript, html and scss",
+    "titulo-tareas":"to do list app",
+    "parrafo-tareas":"simple add/remove to do list app made with js DOM html and css",
+    "parrafo-insta":"instagram cloning for layout practice with css sass and BEM methodology"
+
+   
 }

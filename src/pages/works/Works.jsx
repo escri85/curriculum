@@ -1,43 +1,45 @@
+import { FormattedMessage } from "react-intl";
 import "./Works.scss";
 
 const Works = () => {
   return (
     <div className="container">
       <div className="card">
-        <h3>pagina de videojuegos</h3>
+        <h3><FormattedMessage id="videojuegos"/></h3>
         <a href="https://github.com/escri85/angularProyect">
           <img src={"./angular.png"} alt="" />
         </a>
         <p>
-          Pagina realizada con angular llamada a una API para busqueda de
-          videojuegos por nombre y genero guardado de favoritos y link de
-          descargas,contiene un login sencillo para poder navegar por la pagina
+        <FormattedMessage id="parrafo-angular"/>
         </p>
       </div>
       <div className="card">
-        <h3>pagina de rick & Morty</h3>
+        <h3>
+        <FormattedMessage id="titulo-rick"/>
+
+        </h3>
         <a href="https://github.com/escri85/proyect-javascrpit">
           <img src={"./rick.png"} alt="" />
         </a>
         <p>
-          pagina hecha con webpack,llamando a una API y filtrando personajes por
-          nombre,añadido de personajes favoritos y reseteo de pagina hecho con
-          javascript puro, html y scss
+        <FormattedMessage id="parrafo-rick"/>
+
+          
         </p>
       </div>
       <div className="card">
-        <h3>app de lista de tareas</h3>
+        <h3> <FormattedMessage id="titulo-tareas"/>  </h3>
         <a href="https://github.com/escri85/todo-list">
           <img src={"./todolist.png"} alt="" />
         </a>
-        <p>app sencilla de lista de tareas para añadir o eliminar</p>
+        <p> <FormattedMessage id="parrafo-tareas"/> </p>
       </div>
       <div className="card">
         <h3>clon instagram</h3>
         <a href="https://github.com/escri85/clones/tree/master/instagram">
           <img src={"./instagram.png"} alt="" />
         </a>
-        <p>cloin de instagram hecho con html y css</p>
+        <p><FormattedMessage id="parrafo-insta"/> </p>
       </div>
     </div>
   );
