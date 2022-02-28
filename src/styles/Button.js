@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Button = styled.button`
+display: flex;
+  flex-direction: row;
   text-decoration: none;
   padding: 10px;
   font-weight: 600;
@@ -10,6 +12,7 @@ const Button = styled.button`
   border-radius: 6px;
   cursor: pointer;
   border: none;
+  margin-top: 3%;
   :hover {
     color: #1883ba;
     background-color: #ffffff;

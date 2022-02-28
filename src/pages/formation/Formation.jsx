@@ -8,7 +8,7 @@ const Formation = ({formacion,languages}) => {
         {formacion.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name">📕 {item.name}</Parrafo>
+              <Parrafo className="name">{item.name}</Parrafo>
               <Parrafo>{item.where}</Parrafo>
               <Parrafo>{item.date}</Parrafo>
             </div>
@@ -19,7 +19,7 @@ const Formation = ({formacion,languages}) => {
         {languages.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name">📕 {item.language}</Parrafo>
+              <Parrafo className="name"> {item.language}</Parrafo>
               <Parrafo>{item.wrlevel}</Parrafo>
               <Parrafo>{item.splevel}</Parrafo>
             </div>

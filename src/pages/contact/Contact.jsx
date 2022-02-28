@@ -18,19 +18,19 @@ const Contact = (props) => {
 
     <div className="hero">
       <div className="card">
-        <Parrafo>🗺️{contact.city} </Parrafo>
-        <Parrafo>🗓️{contact.birthDate}</Parrafo>
+        <Parrafo>{contact.city} </Parrafo>
+        <Parrafo>{contact.birthDate}</Parrafo>
         <Parrafo>
-          📧
+          
           <a href={"mailto:" + contact.email}>
          escri85@gmail.com
           </a>
         </Parrafo>
-        <Parrafo>📱 {contact.phone}</Parrafo>
-        <Parrafo>💾<a href={contact.gitHub}>
+        <Parrafo> {contact.phone}</Parrafo>
+        <Parrafo><a href={contact.gitHub}>
             GitHub
           </a></Parrafo>
-          <Parrafo>💾<a href={contact.linkedin}>
+          <Parrafo><a href={contact.linkedin}>
           linkedin
           </a></Parrafo>
       </div>

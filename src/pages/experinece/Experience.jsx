@@ -8,7 +8,7 @@ const Experience = ({experience}) => {
         {experience.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name">📕 {item.name}</Parrafo>
+              <Parrafo className="name">{item.name}</Parrafo>
               <Parrafo>{item.where}</Parrafo>
               <Parrafo>{item.date}</Parrafo>
               <Parrafo>{item.description}</Parrafo>
