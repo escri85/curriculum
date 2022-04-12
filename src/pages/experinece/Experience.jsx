@@ -1,17 +1,16 @@
 import { FormattedMessage } from "react-intl";
-import Parrafo from "../../styles/Parrafo";
 
 const Experience = ({experience}) => {
     return ( <>
          <div>
-      <div className="education card"><FormattedMessage id="education card"  />
+      <div><FormattedMessage id="education card" />
         {experience.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name">{item.name}</Parrafo>
-              <Parrafo>{item.where}</Parrafo>
-              <Parrafo>{item.date}</Parrafo>
-              <Parrafo>{item.description}</Parrafo>
+              <p className="name">{item.name}</p>
+              <p>{item.where}</p>
+              <p>{item.date}</p>
+              <p>{item.description}</p>
             </div>
           );
         })}

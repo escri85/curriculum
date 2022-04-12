@@ -2,13 +2,6 @@
 .app{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-  // &__botons{
-  //   position: fixed;
-  // }
   }
 
 @mixin for-phone-only {

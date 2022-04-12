@@ -1,16 +1,15 @@
 
-import Parrafo from "../../styles/Parrafo";
 import './Formacion.scss'
 const Formation = ({formacion,languages}) => {
     return ( <>
-          <div className="formacion">
-      <div className="card">
+          <div>
+      <div>
         {formacion.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name">{item.name}</Parrafo>
-              <Parrafo>{item.where}</Parrafo>
-              <Parrafo>{item.date}</Parrafo>
+              <p className="name">{item.name}</p>
+              <p>{item.where}</p>
+              <p>{item.date}</p>
             </div>
           );
         })}
@@ -19,9 +18,9 @@ const Formation = ({formacion,languages}) => {
         {languages.map((item) => {
           return (
             <div key={JSON.stringify(item)}>
-              <Parrafo className="name"> {item.language}</Parrafo>
-              <Parrafo>{item.wrlevel}</Parrafo>
-              <Parrafo>{item.splevel}</Parrafo>
+              <p className="name"> {item.language}</p>
+              <p>{item.wrlevel}</p>
+              <p>{item.splevel}</p>
             </div>
           );
         })}

@@ -1,23 +1,30 @@
-import React from 'react';
-import { useContext } from 'react';
-import { FormattedMessage } from 'react-intl';
-import { LanguageContext } from '../../context/LanguageContext';
-import './LanguagesSelector.scss'
+import { useContext, useState } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
+import "./LanguagesSelector.scss";
 const LanguagesSelector = () => {
-  const {locale,changeLanguage}= useContext(LanguageContext)
-  
-  
-  
-    return (
-    <div>
-    {/* <p ><FormattedMessage id="languageSelector.title" defaultMessage="Elige tu idioma"/></p> */}
-    <select value={locale} onChange={(ev) => changeLanguage(ev.target.value)} className='titulo-idioma'>
-        <option value="es">Spanish</option>
-        <option value="en">English</option>
-    </select>
-</div>
+  const { locale, changeLanguage } = useContext(LanguageContext);
+  const [ischecked, setChecked] = useState(false);
 
-  )
+  const handleLanguage = () =>{
+    if(locale === 'es'){
+        changeLanguage('en')
+        setChecked(true)
+    }else{
+        changeLanguage('es')
+        setChecked(false)
+    }
+}
+
+  return (
+    <div>
+      
+        <label className="switch">
+          <input type="checkbox" value={locale} checked={ischecked} onChange={handleLanguage}/>
+          <span className="slider"></span>
+        </label>
+      
+    </div>
+  );
 };
 
 export default LanguagesSelector;

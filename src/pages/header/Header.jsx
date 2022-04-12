@@ -1,5 +1,5 @@
 import "./Header.scss";
-import Button from "../../styles/Button";
+
 import {
   faPhone,
   faUserGraduate,
@@ -9,17 +9,30 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FormattedMessage } from "react-intl";
+import LanguagesSelector from "../../components/LanguagesSelector/LanguagesSelector";
+import Button from "../../styles/Button";
+import Navbar from "./Navbar";
 const Header = (props) => {
   const {
     contact,
     changeComponent,
   } = props;
+
+
+
+
+
   return (
+
+
     <div className="header">
+      <div className="sup">
       <img src={contact.image} alt="" />
-      <h2>Sergio Escribano</h2>
-      <h3>web developer</h3>
+  <h2>Bienvenido!!</h2>
+
+      </div>
       <div className="botones">
+  <LanguagesSelector/>
         <Button onClick={()=>{changeComponent('contact')}}>
               <FontAwesomeIcon className="icono" icon={faPhone} />
               <FormattedMessage id="boton-contacto"/>
@@ -49,6 +62,7 @@ const Header = (props) => {
 
           {/* Experiencia */}
         </Button>
+
       </div>
     </div>
   );

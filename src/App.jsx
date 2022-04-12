@@ -33,7 +33,6 @@ function App() {
   return (
     <div className="app">
       <div className="app__botons">
-        <LanguagesSelector />
         <Header contact={contact} changeComponent={changeComponent} />
       </div>
       <div className="app__info">{component}</div>
