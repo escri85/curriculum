@@ -52,7 +52,7 @@
    
    /*------ ADDED CSS ---------*/
    .slider:after {
-    content: 'ENGLISH';
+    content: 'SPANISH';
     color: white;
     display: block;
     position: absolute;
@@ -64,7 +64,7 @@
    }
    
    input:checked + .slider:after {
-    content: 'ESPAÑOL';
+    content: 'ENGLISH';
    }
    
    /*--------- END --------*/

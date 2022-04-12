@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-const Button = styled.button`
+const Button = styled.button `
 
  padding: 1.3em 3em;
  font-size: 12px;
@@ -21,6 +21,12 @@ const Button = styled.button`
 
  :hover {
  background-color: #2EE59D;
+ box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+ color: #fff;
+ transform: translateY(-7px);
+}
+:focus{
+   background-color: #2EE59D;
  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
  color: #fff;
  transform: translateY(-7px);
