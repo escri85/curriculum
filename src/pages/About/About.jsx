@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 const About = ({ habilities }) => {
   return (
     <>
-      <div><FormattedMessage id="card" defaultMessage='about me'/>
+      <div className="about"><FormattedMessage id="card" defaultMessage='about me'/>
               {habilities.map((element) => {
           return (
             <div key={JSON.stringify(element)}>

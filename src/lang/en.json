@@ -2,7 +2,7 @@
 
 { 
    
- 
+    "Bienvenido":"Welcome",
     "languageSelector.title": "Choose your language",
     "boton-contacto":"Contact",
     "boton-about":"About",
@@ -15,7 +15,9 @@
     "parrafo-rick":"page made with webpack, calling an API and filtering characters by name, added favorite characters and page reset done with pure javascript, html and scss",
     "titulo-tareas":"to do list app",
     "parrafo-tareas":"simple add/remove to do list app made with js DOM html and css",
-    "parrafo-insta":"instagram cloning for layout practice with css sass and BEM methodology"
-
-   
+    "parrafo-insta":"instagram cloning for layout practice with css sass and BEM methodology",
+    "titulo-ecomerce":"Fashion Ecomerce",
+    "parrafo-ecomerce":"application made with stack mern functionality of favorites, purchase of articles, login and use of the page by user and admin roles",
+    "titulo-calculadora":"Calculator",
+    "parrafo-calculadora":"calculator made with react with basic functions"
 }

@@ -28,7 +28,7 @@ const Header = (props) => {
     <div className="header">
       <div className="sup">
       <img src={contact.image} alt="" />
-  <h2>Bienvenido!!</h2>
+  <h2><FormattedMessage id="Bienvenido"/></h2>
 
       </div>
       <div className="botones">
